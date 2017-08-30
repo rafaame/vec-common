@@ -1,0 +1,10 @@
+#ifndef CONST_H
+#define CONST_H
+
+#ifndef BUFFER_LENGTH
+#define BUFFER_LENGTH 32
+#endif
+
+#define GITHUB_ACCESS_TOKEN "token __GITHUB__TOKEN__"
+
+#endif
