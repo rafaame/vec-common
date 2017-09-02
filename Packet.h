@@ -86,4 +86,9 @@ public:
 #endif
 };
 
+#ifdef QT_CORE_LIB
+Q_DECLARE_METATYPE(DataPacket)
+Q_DECLARE_METATYPE(RequestPacket)
+#endif
+
 #endif
