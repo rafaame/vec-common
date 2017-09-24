@@ -426,8 +426,8 @@ RequestPacket *RequestPacket::fromByteArray(uint8_t *bytes) {
 	}
 
 	if (bytes[2]) {
-		PacketDataType_t type = (PacketDataType_t) bytes[3];
-		switch (type) {
+		packet->dataType = (PacketDataType_t) bytes[3];
+		switch (packet->dataType) {
 			case PACKET_DATA_TYPE_BOOL: {
 				bool b;
 				memcpy(&b, &(bytes[4]), sizeof(bool));
